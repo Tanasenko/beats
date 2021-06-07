@@ -12,7 +12,7 @@
   position: relative;
 }
 .benefits__item::before {
-  content: url("/img/advantages/shape.png");
+  content: url("/beats/img/advantages/shape.png");
   position: absolute;
   top: 63px;
   right: 0;
