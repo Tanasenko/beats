@@ -1,0 +1,29 @@
+.section {
+  height: 100vh;
+  min-height: 650px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section__title {
+  font-weight: 700;
+  font-size: 48px;
+  text-transform: uppercase;
+  margin-bottom: 60px;
+  text-align: center;
+  color: #292929;
+}
+
+.headline {
+  text-align: center;
+}
+
+.headline__title {
+  margin-bottom: 18px;
+}
+
+.hedline__subtitle {
+  padding: 0 18%;
+  margin-bottom: 62px;
+}

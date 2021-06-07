@@ -1,0 +1,23 @@
+.botton {
+  padding: 18px 41px;
+  border-radius: 100px;
+  border: none;
+  max-width: 163px;
+  background-color: #e01f3d;
+  color: #fff;
+  text-decoration: none;
+}
+.botton:hover {
+  background-color: #ca1b36;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+.botton--transparent {
+  background-color: transparent;
+}
+.botton--transparent:hover {
+  background-color: transparent;
+  color: #ca1b36;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}

@@ -1,0 +1,52 @@
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.menu__item {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 27px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item:hover {
+  color: #e01f3d;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.contacts {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__img {
+  margin-right: 6px;
+}

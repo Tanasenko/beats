@@ -1,0 +1,39 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu__list {
+  display: flex;
+}
+
+.menu__item {
+  font-family: "Alegreya Sans", serif;
+  font-weight: 400;
+  font-size: 18px;
+  margin-right: 27px;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: #e01f3d;
+    transition: 0.3s;
+  }
+}
+
+.menu__link {
+  text-decoration: none;
+}
+
+.contacts {
+  font-weight: 400;
+  font-size: 18px;
+  font-style: normal;
+  display: flex;
+  align-items: center;
+}
+
+.contacts__img {
+  margin-right: 6px;
+}

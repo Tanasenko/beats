@@ -1,0 +1,9 @@
+.benefits__section {
+  position: relative;
+}
+.benefits__section::before {
+  content: url("/img/advantages/decor.png");
+  position: absolute;
+  bottom: -80px;
+  left: 12%;
+}
