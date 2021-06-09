@@ -2,7 +2,7 @@
   position: relative;
 
   &::before {
-    content: url("/img/advantages/decor.png");
+    content: url("../../img/advantages/decor.png");
     position: absolute;
     bottom: -5rem;
     left: 12%;
