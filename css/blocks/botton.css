@@ -1,14 +1,14 @@
 .botton {
-  padding: 18px 41px;
-  border-radius: 100px;
+  padding: 1.125rem 2.562rem;
+  border-radius: 6.25rem;
   border: none;
-  max-width: 163px;
+  max-width: 10.188rem;
   text-decoration: none;
 }
 .botton--theme--red {
   background-color: #e01f3d;
   color: #fff;
-  padding: 21px 41px;
+  padding: 1.313rem 2.563rem;
 }
 .botton--theme--red:hover {
   background-color: #ca1b36;

@@ -2,8 +2,8 @@
   position: relative;
 }
 .benefits__section::before {
-  content: url("/beats/img/advantages/decor.png");
+  content: url("/img/advantages/decor.png");
   position: absolute;
-  bottom: -80px;
+  bottom: -5rem;
   left: 12%;
 }

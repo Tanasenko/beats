@@ -4,7 +4,7 @@
 
 .form__col {
   flex: 1;
-  margin-right: 27px;
+  margin-right: 1.688rem;
 
   &:last-child {
     margin-right: 0;
@@ -12,12 +12,12 @@
 }
 .form__row {
   display: flex;
-  margin-bottom: 11px;
+  margin-bottom: 0.688rem;
 }
 
 .form__block {
   flex: 1;
-  margin-right: 20px;
+  margin-right: 1.25rem;
 
   &:last-child {
     margin-right: 0;
@@ -25,23 +25,23 @@
 }
 
 .form__title {
-  margin-bottom: 6px;
+  margin-bottom: 0.375rem;
 }
 
 .form__input {
   width: 100%;
-  border: 3px solid transparent;
-  border-radius: 4px;
-  padding: 18px 12px;
+  border: 0.188rem solid transparent;
+  border-radius: 0.25rem;
+  padding: 1.125rem 0.75rem;
 
   &--textarea {
-    height: 152px;
+    height: 9.5rem;
     resize: none;
-    margin-bottom: 27px;
+    margin-bottom: 1.688rem;
   }
 
   &:focus {
-    border: 3px solid #e01f3d;
+    border: 0.188rem solid #e01f3d;
     outline: none;
   }
 }
@@ -49,14 +49,14 @@
 .form__controls {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 4px;
+  margin-bottom: 0.25rem;
 }
 
 .radio {
   display: flex;
   cursor: pointer;
   user-select: none;
-  margin-right: 16px;
+  margin-right: 1rem;
 
   &:last-child {
     margin-right: 0;
@@ -67,8 +67,7 @@
       border-radius: 0;
 
       &::before {
-        background: url("/beats/img/delivery/Vector.png") center center
-          no-repeat;
+        background: url("/img/delivery/Vector.png") center center no-repeat;
       }
     }
   }
@@ -85,12 +84,12 @@
 }
 
 .radio__visible {
-  width: 25px;
-  height: 25px;
+  width: 1.563rem;
+  height: 1.563rem;
   position: relative;
   border-radius: 50%;
   background: #fff;
-  margin-right: 10px;
+  margin-right: 0.625rem;
 
   &:last-child {
     margin-right: 0;
@@ -98,8 +97,8 @@
 
   &::before {
     content: "";
-    width: 13px;
-    height: 13px;
+    width: 0.813rem;
+    height: 0.813rem;
     border-radius: 50%;
     background: #e01f3d;
     position: absolute;
@@ -111,5 +110,5 @@
 }
 
 .form__btns {
-  margin-top: 32px;
+  margin-top: 2rem;
 }

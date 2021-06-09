@@ -2,8 +2,8 @@
   position: relative;
 }
 .revews__section::before {
-  content: url("/beats/img/advantages/ellipse_dec.png");
+  content: url("/img/advantages/ellipse_dec.png");
   position: absolute;
-  bottom: -24px;
+  bottom: -1.5rem;
   left: 15%;
 }

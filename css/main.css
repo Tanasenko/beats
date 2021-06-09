@@ -1,0 +1,14 @@
+@import url("./layout/normalize.css");
+@import url("./layout/base.css");
+@import url("./blocks/header.css");
+@import url("./blocks/hello.css");
+@import url("./blocks/botton.css");
+@import url("./blocks/benefits.css");
+@import url("./blocks/section.css");
+@import url("./blocks/benefits__section.css");
+@import url("./blocks/reviews.css");
+@import url("./blocks/reviews__section.css");
+@import url("./blocks/interectiv-avatar.css");
+@import url("./blocks/delivery_section.css");
+@import url("./blocks/form.css");
+@import url("./blocks/fixed-menu.css");

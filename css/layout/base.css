@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 16px;
+}
+
 html,
 body {
   height: 100%;
@@ -9,7 +13,7 @@ body {
 
 body {
   font-family: "Play", "Alegreya Sans", sans-serif;
-  font-size: 16px;
+  font-size: 1rem;
   line-height: 1.42;
   color: #292929;
   height: 100%;
@@ -54,14 +58,6 @@ button {
 
 .container {
   margin: 0 auto;
-  width: 940px;
+  width: 58.75rem;
   position: relative;
-}
-
-.section {
-  height: 100vp;
-  min-height: 650px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }

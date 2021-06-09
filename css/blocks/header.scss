@@ -11,8 +11,8 @@ header {
 .menu__item {
   font-family: "Alegreya Sans", serif;
   font-weight: 400;
-  font-size: 18px;
-  margin-right: 27px;
+  font-size: 1.125rem;
+  margin-right: 1.688rem;
   &:last-child {
     margin-right: 0;
   }
@@ -28,12 +28,18 @@ header {
 
 .contacts {
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-style: normal;
   display: flex;
   align-items: center;
 }
 
 .contacts__img {
-  margin-right: 6px;
+  margin-right: 0.375rem;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 10px;
+  }
 }
