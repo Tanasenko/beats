@@ -62,3 +62,58 @@
     font-weight: 400;
   }
 }
+
+@media (max-width: 768px) {
+  .hello__container {
+    background: none;
+  }
+
+  .hello__item {
+    width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    &::before {
+      content: "";
+      background: url("../../img/hello/headphones.png") center center / contain
+        no-repeat;
+      width: 323px;
+      height: 323px;
+      transform: translateY(-50px);
+    }
+  }
+
+  .hello__title {
+    padding: 0px 3%;
+    margin-bottom: 0.25rem;
+  }
+
+  .hello__text {
+    padding: 0 25%;
+    margin-bottom: 1.25rem;
+  }
+
+  .trigers {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .hello__container {
+    padding: 1.5rem 0 0;
+  }
+
+  .hello__title {
+    font-size: 32px;
+    padding: 0px 9%;
+  }
+
+  .hello__text {
+    font-size: 18px;
+    padding: 0 20%;
+  }
+}

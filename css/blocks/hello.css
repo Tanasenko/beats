@@ -14,7 +14,7 @@
   position: absolute;
   bottom: -1.56rem;
   right: 18%;
-  content: url("/img/hello/decor.png");
+  content: url("../../img/hello/decor.png");
 }
 
 .hello__container {
@@ -30,7 +30,7 @@
           justify-content: space-between;
   height: 100%;
   padding: 1.5rem 0 4.375rem;
-  background: url("/img/hello/headphones.png") right center/52% auto no-repeat;
+  background: url("../../img/hello/headphones.png") right center/52% auto no-repeat;
 }
 
 .hello__item {
@@ -77,6 +77,64 @@
 
 @media (max-width: 768px) {
   .hello__container {
-    background: red;
+    background: none;
+  }
+
+  .hello__item {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .hello__item::before {
+    content: "";
+    background: url("../../img/hello/headphones.png") center center/contain no-repeat;
+    width: 323px;
+    height: 323px;
+    -webkit-transform: translateY(-50px);
+            transform: translateY(-50px);
+  }
+
+  .hello__title {
+    padding: 0px 3%;
+    margin-bottom: 0.25rem;
+  }
+
+  .hello__text {
+    padding: 0 25%;
+    margin-bottom: 1.25rem;
+  }
+
+  .trigers {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .hello__container {
+    padding: 1.5rem 0 0;
+  }
+
+  .hello__title {
+    font-size: 32px;
+    padding: 0px 9%;
+  }
+
+  .hello__text {
+    font-size: 18px;
+    padding: 0 20%;
   }
 }

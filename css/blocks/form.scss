@@ -112,3 +112,46 @@
 .form__btns {
   margin-top: 2rem;
 }
+
+@media (max-width: 768px) {
+  .form {
+    flex-direction: column;
+    padding: 0 18%;
+  }
+
+  .form__col {
+    margin-right: 0;
+  }
+
+  .form__row {
+    margin-bottom: 1.0625rem;
+  }
+
+  .form__input {
+    padding: 0.25rem 0.75rem;
+
+    &--textarea {
+      height: 5.125rem;
+      margin-bottom: 0.4375rem;
+    }
+  }
+
+  .form__btns {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 1.4375rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .form {
+    padding: 0;
+  }
+
+  .form__controls {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+}

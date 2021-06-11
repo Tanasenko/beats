@@ -57,7 +57,8 @@ button {
 }
 
 .container {
+  width: 95%;
+  max-width: 58.75rem;
   margin: 0 auto;
-  width: 58.75rem;
   position: relative;
 }

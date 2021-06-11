@@ -2,6 +2,7 @@
   position: fixed;
   top: 20%;
   right: 3%;
+  z-index: 100;
 }
 
 .fixed-menu__item {
@@ -12,18 +13,18 @@
 }
 
 .fixed-menu__link {
-  width: 16px;
-  height: 16px;
+  width: 1rem;
+  height: 1rem;
   border-radius: 50%;
-  border: 1px solid transparent;
+  border: 0.0625rem solid transparent;
   display: block;
   position: relative;
 }
 .fixed-menu__link::before {
   content: "";
   display: block;
-  width: 6px;
-  height: 6px;
+  width: 0.375rem;
+  height: 0.375rem;
   border-radius: 50%;
   background-color: #e01f3d;
   position: absolute;
@@ -31,4 +32,10 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+@media (max-width: 768px) {
+  .fixed-menu {
+    display: none;
+  }
 }

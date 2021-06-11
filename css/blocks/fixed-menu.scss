@@ -2,7 +2,7 @@
   position: fixed;
   top: 20%;
   right: 3%;
-  z-index: $z-fixed-menu;
+  z-index: 100;
 }
 
 .fixed-menu__item {
@@ -35,5 +35,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .fixed-menu {
+    display: none;
   }
 }
