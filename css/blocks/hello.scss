@@ -11,7 +11,7 @@
     position: absolute;
     bottom: -1.56rem;
     right: 18%;
-    content: url("../../img/hello/decor.png");
+    content: url("../../img/hello/decor.svg");
   }
 }
 
@@ -61,6 +61,13 @@
   .triger__title {
     font-weight: 400;
   }
+}
+
+.noise,
+.charging,
+.plug {
+  width: 2.5625rem;
+  height: 2.5625rem;
 }
 
 @media (max-width: 768px) {

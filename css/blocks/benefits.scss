@@ -8,7 +8,7 @@
   position: relative;
 
   &::before {
-    content: url("../../img/advantages/shape.png");
+    content: url("../../img/advantages/shape.svg");
     position: absolute;
     top: 3.938rem;
     right: 0;
@@ -51,6 +51,13 @@
   left: 50%;
   transform: translate(-50%, -50%);
   margin-bottom: 1.5rem;
+}
+
+.battery,
+.sound,
+.time {
+  width: 4.25rem;
+  height: 4.25rem;
 }
 
 .benefit__title {
