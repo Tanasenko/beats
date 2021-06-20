@@ -30,6 +30,11 @@
   transform: translate(-50%, -50%);
 }
 
+.assortiment__icon {
+  height: 100%;
+  width: 100%;
+}
+
 .assortment__property {
   display: flex;
   margin-bottom: 1.5rem;
@@ -72,4 +77,43 @@
   font-size: 36px;
   color: #151515;
   margin-right: 13px;
+}
+
+@media (max-width: 768px) {
+  .assortment__item {
+    display: flex;
+    flex-direction: column;
+    min-width: 614px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .assortment__img {
+    width: 19.125rem;
+    height: 19.125rem;
+    margin-right: 0;
+    margin-bottom: 49px;
+  }
+
+  .assortment__description {
+    display: none;
+  }
+
+  .assortment__property {
+    justify-content: center;
+    padding-left: 10%;
+  }
+
+  .property__item {
+    text-align: left;
+  }
+
+  .assortment__offer {
+    justify-content: center;
+  }
+
+  .assortment__price {
+    font-size: 40px;
+    margin-right: 40px;
+  }
 }
