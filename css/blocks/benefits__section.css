@@ -4,6 +4,6 @@
 .benefits__section::before {
   content: url("../../img/advantages/decor.svg");
   position: absolute;
-  bottom: -5rem;
+  bottom: -1.5rem;
   left: 12%;
 }
