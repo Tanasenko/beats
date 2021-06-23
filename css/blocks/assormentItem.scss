@@ -1,17 +1,24 @@
 .assortment__item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
 }
 
 .assortment__img {
+  flex-shrink: 0;
+  width: 40%;
+  margin-right: 59px;
+}
+
+.assortiment__icon {
   width: 28.25rem;
   height: 28.25rem;
-  margin-right: 3.6875rem;
 }
 
 .assortment__info {
   display: flex;
   flex-direction: column;
+  width: 40%;
 }
 
 .assortment__description {
@@ -21,18 +28,62 @@
   background-repeat: 0.16rem;
   position: relative;
   margin-bottom: 1.5625rem;
+  position: relative;
+
+  &:hover {
+    .description__list {
+      left: 100%;
+      opacity: 1;
+    }
+  }
 }
 
 .description__img {
+  width: 2.625rem;
+  height: 2.625rem;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.assortiment__icon {
-  height: 100%;
-  width: 100%;
+.description__list {
+  position: absolute;
+  top: 0;
+  left: 99999rem;
+  transition: 0.3;
+  background: #ffffff, 80%;
+  box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
+  backdrop-filter: blur(40px);
+  border-radius: 4px;
+  padding: 1.75rem 1.5625rem 2.125rem 1.875rem;
+  min-width: 17.0625rem;
+}
+
+.description__item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.75rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.description__icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  flex-shrink: 0;
+  margin-right: 1rem;
+}
+
+.description__title {
+  flex-shrink: 0;
+}
+
+.description__text {
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .assortment__property {
@@ -48,7 +99,7 @@
 
 .assortment__title {
   font-weight: 700;
-  font-size: 36px;
+  font-size: 2.25rem;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
@@ -74,16 +125,16 @@
 }
 
 .assortment__price {
-  font-size: 36px;
+  font-size: 2.25rem;
   color: #151515;
-  margin-right: 13px;
+  margin-right: 0.8125rem;
 }
 
 @media (max-width: 768px) {
   .assortment__item {
     display: flex;
     flex-direction: column;
-    min-width: 614px;
+    min-width: 38.375rem;
     align-items: center;
     text-align: center;
   }
@@ -92,7 +143,12 @@
     width: 19.125rem;
     height: 19.125rem;
     margin-right: 0;
-    margin-bottom: 49px;
+    margin-bottom: 3.0625rem;
+  }
+
+  .assortment__title {
+    font-size: 28px;
+    margin-bottom: 0.875rem;
   }
 
   .assortment__description {
@@ -113,7 +169,21 @@
   }
 
   .assortment__price {
-    font-size: 40px;
-    margin-right: 40px;
+    font-size: 2.5rem;
+    margin-right: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .assortment__img {
+    margin-bottom: 1.625rem;
+  }
+
+  .assortment__info {
+    width: 26rem;
+  }
+
+  .assortment__title {
+    margin-bottom: 0.8125rem;
   }
 }
