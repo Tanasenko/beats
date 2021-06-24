@@ -28,8 +28,31 @@
 
 .assortment__control--left {
   left: -4%;
+  margin-left: 13.5px;
 }
 
 .assortment__control--right {
   right: -4%;
+  margin-right: 13.5px;
+}
+
+@media (max-width: 768px) {
+  .assortment__control--left {
+    left: 9%;
+    top: 26%;
+  }
+
+  .assortment__control--right {
+    right: 9%;
+    top: 26%;
+  }
+}
+@media (max-width: 480px) {
+  .assortment__control--left {
+    left: 5%;
+  }
+
+  .assortment__control--right {
+    right: 5%;
+  }
 }
