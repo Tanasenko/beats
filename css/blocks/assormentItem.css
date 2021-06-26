@@ -1,3 +1,19 @@
+.slider {
+  width: 940px;
+  overflow: hidden;
+}
+
+.assortment__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 1880px;
+  will-change: right;
+  -webkit-transition: right 0.3s;
+  transition: right 0.3s;
+}
+
 .assortment__item {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -8,6 +24,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 940px;
 }
 
 .assortment__img {
@@ -45,64 +62,6 @@
 .assortment__description:hover .description__list {
   left: 100%;
   opacity: 1;
-}
-
-.description__img {
-  width: 2.625rem;
-  height: 2.625rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-}
-
-.description__list {
-  position: absolute;
-  top: 0;
-  left: 99999rem;
-  -webkit-transition: 0.3;
-  transition: 0.3;
-  background: #ffffff, 80%;
-  -webkit-box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-          box-shadow: 4px 4px 40px rgba(0, 0, 0, 0.06);
-  -webkit-backdrop-filter: blur(40px);
-          backdrop-filter: blur(40px);
-  border-radius: 4px;
-  padding: 1.75rem 1.5625rem 2.125rem 1.875rem;
-  min-width: 17.0625rem;
-}
-
-.description__item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-bottom: 1.75rem;
-}
-.description__item:last-child {
-  margin-bottom: 0;
-}
-
-.description__icon {
-  width: 1.5rem;
-  height: 1.5rem;
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-right: 1rem;
-}
-
-.description__title {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-}
-
-.description__text {
-  -ms-flex-negative: 0;
-      flex-shrink: 0;
-  margin-left: auto;
 }
 
 .assortment__property {
@@ -161,6 +120,10 @@
 }
 
 @media (max-width: 768px) {
+  .slider {
+    width: 614px;
+  }
+
   .assortment__item {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -173,6 +136,7 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+    width: 614px;
   }
 
   .assortment__img {

@@ -1,0 +1,27 @@
+.accordion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 90%;
+  height: 0;
+  overflow: hidden;
+}
+.accordion--active {
+  min-height: 5rem;
+}
+
+.accordion__title {
+  margin-bottom: 0.25rem;
+}
+
+.accordion__text {
+  color: #666666;
+}

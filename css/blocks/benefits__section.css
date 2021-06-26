@@ -6,4 +6,5 @@
   position: absolute;
   bottom: -1.5rem;
   left: 12%;
+  z-index: 1;
 }

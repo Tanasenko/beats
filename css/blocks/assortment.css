@@ -5,6 +5,12 @@
   display: flex;
   position: relative;
 }
+.assortment::before {
+  content: url("../../img/assortment/decor.svg");
+  position: absolute;
+  bottom: -1.5rem;
+  right: 10%;
+}
 
 .assortment__control {
   position: absolute;
@@ -12,7 +18,7 @@
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 13.5px;
-  height: 27px;
+  height: 1.6875rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,12 +34,12 @@
 
 .assortment__control--left {
   left: -4%;
-  margin-left: 13.5px;
+  margin-left: 0.84375rem;
 }
 
 .assortment__control--right {
   right: -4%;
-  margin-right: 13.5px;
+  margin-right: 0.84375rem;
 }
 
 @media (max-width: 768px) {
