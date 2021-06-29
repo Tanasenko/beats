@@ -1,6 +1,9 @@
 .slider {
-  width: 940px;
-  overflow: hidden;
+  .bx-wrapper {
+    border: 0;
+    background: transparent;
+    box-shadow: none;
+  }
 }
 
 .assortment__list {

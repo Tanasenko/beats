@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@400;700&family=Play:wght@400;700&display=swap"
         rel="stylesheet">
@@ -332,7 +333,7 @@
 
                     </div>
                 </section>
-                <!--<section class="section team">
+                <section class="section team">
                     <div class="container">
                         <h2 class="section__title">команда</h2>
                         <ul class="team__list">
@@ -342,9 +343,11 @@
                                 </div>
                                 <div class="team__title">Борис Федорович</div>
                                 <div class="accordion">
-                                    <div class="accordion__title">Главный технолог</div>
-                                    <div class="accordion__text">Отвечает за вкусовые качества
-                                        и калорийность.
+                                    <div class="accordion__iner">
+                                        <div class="accordion__title">Главный технолог</div>
+                                        <div class="accordion__text">Отвечает за вкусовые качества
+                                            и калорийность.
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -354,10 +357,12 @@
                                 </div>
                                 <div class="team__title">Алла Иванова</div>
                                 <div class="accordion">
-                                    <div class="accordion__title">Специалист по упаковке
-                                    </div>
-                                    <div class="accordion__text">Автор запоминающегося стиля
-                                        наших батончиков.
+                                    <div class="accordion__iner">
+                                        <div class="accordion__title">Специалист по упаковке
+                                        </div>
+                                        <div class="accordion__text">Автор запоминающегося стиля
+                                            наших батончиков.
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -367,9 +372,11 @@
                                 </div>
                                 <div class="team__title">Кирилл Матросов</div>
                                 <div class="accordion">
-                                    <div class="accordion__title">Оператор</div>
-                                    <div class="accordion__text">Разработал дизан
-                                        наушников beats solo 3.
+                                    <div class="accordion__iner">
+                                        <div class="accordion__title">Оператор</div>
+                                        <div class="accordion__text">Разработал дизан
+                                            наушников beats solo 3.
+                                        </div>
                                     </div>
                                 </div>
                             </li>
@@ -379,199 +386,310 @@
                                 </div>
                                 <div class="team__title">Мила Рыжкова</div>
                                 <div class="accordion">
-                                    <div class="accordion__title">PR, маркетинг
-                                    </div>
-                                    <div class="accordion__text">По всем вопросам сотрудничества
-                                        и рекламы писать только Миле.
+                                    <div class="accordion__iner">
+                                        <div class="accordion__title">PR, маркетинг
+                                        </div>
+                                        <div class="accordion__text">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.
+                                        </div>
                                     </div>
                                 </div>
                             </li>
                         </ul>
-                    </div>
-                </section>-->
-                <section class="section revews__section">
-                    <div class="container reviews__container">
-                        <h2 class="section__title">отзывы</h2>
-                        <div class="reviews">
-                            <div class="reviews__display">
-                                <div class="reviews__display-iner">
-                                    <div class="reviews__avatar">
-                                        <img src="./img/advantages/billy.png" alt="Билли Айлиш"
-                                            class="reviews__avatar-img">
-                                    </div>
-                                    <article class="reviews__content">
-                                        <h3 class="reviews__title">Отличный звук</h3>
-                                        <div class="reviews__text">
-                                            <p>
-                                                Батончики понравились. На мой взгляд слегка завышена цена по сравнению с
-                                                конкурентами, однако, как говорится – оно того
-                                                стоит. Нравится носить с собой, нравится держать в руке. Ну и конечно
-                                                же, кушать. Идеально утоляют голод, хоть и не
-                                                надолго. Через час уже ем ещё один. Но это скорее плюс, чем минус.
-                                            </p>
+                        <ul class="team__list team__list--mobile">
+                            <li class="team__item">
+                                <div class="team__title">Борис Федорович</div>
+                                <div class="accordion">
+                                    <div class="accordion__iner">
+                                        <div class="team__img">
+                                            <img src="./img/team/boris.jpg" alt="Борис Федорович" class="team__icon">
                                         </div>
-                                        <div class="reviews__author">Билли Айлиш</div>
-                                    </article>
+                                        <div class="accordion__title">Главный технолог</div>
+                                        <div class="accordion__text">Отвечает за вкусовые качества
+                                            и калорийность.
+                                        </div>
+                                    </div>
                                 </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__title">Алла Иванова</div>
+                                <div class="accordion">
+                                    <div class="accordion__iner">
+                                        <div class="team__img">
+                                            <img src="./img/team/alla.jpg" alt="Алла Иванова" class="team__icon">
+                                        </div>
+                                        <div class="accordion__title">Специалист по упаковке
+                                        </div>
+                                        <div class="accordion__text">Автор запоминающегося стиля
+                                            наших батончиков.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__title">Кирилл Матросов</div>
+                                <div class="accordion">
+                                    <div class="accordion__iner">
+                                        <div class="team__img">
+                                            <img src="./img/team/kirill.jpg" alt="Кирилл Матросов" class="team__icon">
+                                        </div>
+                                        <div class="accordion__title">Оператор</div>
+                                        <div class="accordion__text">Разработал дизан
+                                            наушников beats solo 3.
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="team__item">
+                                <div class="team__title">Мила Рыжкова</div>
+                                <div class="accordion">
+                                    <div class="accordion__iner">
+                                        <div class="team__img">
+                                            <img src="./img/team/mila.jpg" alt="Мила Рыжкова" class="team__icon">
+                                        </div>
+                                        <div class="accordion__title">PR, маркетинг
+                                        </div>
+                                        <div class="accordion__text">По всем вопросам сотрудничества
+                                            и рекламы писать только Миле.
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>
+        </div>
+        </li>
+        </ul>
+    </div>
+    </section>
+    <section class="section revews__section">
+        <div class="container reviews__container">
+            <h2 class="section__title">отзывы</h2>
+            <div class="reviews">
+                <ul class="reviews__list">
+
+                    <li class="reviews__display reviews__display--active" data-linked-with='one'>
+                        <div class="reviews__display-iner">
+                            <div class="reviews__avatar">
+                                <img src="./img/advantages/billy.png" alt="Билли Айлиш" class="reviews__avatar-img">
                             </div>
-                            <ul class="reviws__switcher">
-                                <li class="rewiws__switcher-item interectiv-avatar interectiv-avatar--activ">
-                                    <a href="#" class="interectiv-avatar__link">
-                                        <img src="./img/advantages/billy_m.png" alt="Билли Айлиш"
-                                            class="interectiv-avatar__img">
-                                    </a>
-                                </li>
-                                <li class="rewiws__switcher-item interectiv-avatar">
-                                    <a href="#" class="interectiv-avatar__link">
-                                        <img src="./img/advantages/vadim_m.png" alt="Вадим Грачев"
-                                            class="interectiv-avatar__img">
-                                    </a>
-                                </li>
-                                <li class="rewiws__switcher-item interectiv-avatar">
-                                    <a href="#" class="interectiv-avatar__link">
-                                        <img src="./img/advantages/maria_m.png" alt="Мария Орлова"
-                                            class="interectiv-avatar__img">
-                                    </a>
-                                </li>
-                            </ul>
+                            <article class="reviews__content">
+                                <h3 class="reviews__title">Отличный звук</h3>
+                                <div class="reviews__text">
+                                    <p>
+                                        Батончики понравились. На мой взгляд слегка завышена цена по
+                                        сравнению с
+                                        конкурентами, однако, как говорится – оно того
+                                        стоит. Нравится носить с собой, нравится держать в руке. Ну и
+                                        конечно
+                                        же, кушать. Идеально утоляют голод, хоть и не
+                                        надолго. Через час уже ем ещё один. Но это скорее плюс, чем
+                                        минус.
+                                    </p>
+                                </div>
+                                <div class="reviews__author">Билли Айлиш</div>
+                            </article>
                         </div>
-                </section>
-                <section class="section delivery_section">
-                    <div class="container">
-                        <h2 class="section__title">закажите доставку</h2>
-                        <form class="form">
-                            <div class="form__col">
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__title">Имя</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Телефон</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                </div>
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__title">Улица</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                </div>
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__title">Дом</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Корпус</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Квартира</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                    <label class="form__block">
-                                        <div class="form__title">Этаж</div>
-                                        <input type="text" class="form__input">
-                                    </label>
-                                </div>
+                    </li>
+
+                    <li class="reviews__display" data-linked-with='two'>
+                        <div class="reviews__display-iner">
+                            <div class="reviews__avatar">
+                                <img src="./img/advantages/vadim.jpg" alt="Вадим Грачев" class="reviews__avatar-img">
                             </div>
-                            <div class="form__col">
-                                <div class="form__row">
-                                    <label class="form__block">
-                                        <div class="form__title">Комментарий</div>
-                                        <textarea name="" id="" cols="30" rows="10"
-                                            class="form__input form__input--textarea"></textarea>
-                                    </label>
+                            <article class="reviews__content">
+                                <h3 class="reviews__title">Крутой дизайн</h3>
+                                <div class="reviews__text">
+                                    <p>
+                                        После тренировок всегда хочется быстро закинуться чем-то
+                                        белковым,
+                                        потому что до дома ещё нужно доехать. А кушать
+                                        хочется. Протеиновые батончики всегда выручают в этом плане.
+                                        Спасибо
+                                        производителю за этот качественный и экологичный
+                                        продукт.
+                                    </p>
                                 </div>
-                                <div class="form__row">
-                                    <div class="form__controls">
-                                        <label class="radio">
-                                            <input type="radio" name="option" class="radio__item">
-                                            <div class="radio__visible"></div>
-                                            <div class="radio__title">Потребуется сдача</div>
-                                        </label>
-                                        <label class="radio">
-                                            <input type="radio" name="option" class="radio__item">
-                                            <div class="radio__visible"></div>
-                                            <div class="radio__title">Оплата картой</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__controls">
-                                        <label class="radio  radio--checkbox">
-                                            <input type="checkbox" class="radio__item">
-                                            <div class="radio__visible"></div>
-                                            <div class="radio__title">Не перезванивать</div>
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="form__row">
-                                    <div class="form__btns">
-                                        <button type="submit" class="botton botton--theme--red">Заказать</button>
-                                        <button type="reset"
-                                            class="botton  botton--theme--transparent">Очистить</button>
-                                    </div>
-                                </div>
+                                <div class="reviews__author">Вадим Грачев</div>
+                            </article>
+                        </div>
+                    </li>
+
+                    <li class="reviews__display" data-linked-with='three'>
+                        <div class="reviews__display-iner">
+                            <div class="reviews__avatar">
+                                <img src="./img/advantages/maria.jpg" alt="Мария Орлова" class="reviews__avatar-img">
                             </div>
-                        </form>
-                    </div>
-                </section>
-                <section class="section">
-                    <div class="map">
-                        <img src="./img/map.png" alt="" class="map__img">
-                    </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="footer-address">
-                    <div class="footer-address__text">Москва, ул.Новый Арбат, д.31/12</div>
-                    <address class="contacts contacts--footer">
-                        <svg class="contacts__img">
-                            <use xlink:href="./img/sprite.svg#phone"></use>
-                        </svg>
-                        <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
-                    </address>
-                </div>
-                <ul class="social">
-                    <li class="social__icon">
-                        <a href="#" class="social__link">
-                            <div class="social__img">
-                                <svg class="vk">
-                                    <use xlink:href="./img/sprite.svg#vk"></use>
-                                </svg>
-                            </div>
+                            <article class="reviews__content">
+                                <h3 class="reviews__title">На долго хватает заряда</h3>
+                                <div class="reviews__text">
+                                    <p>
+                                        Батончики понравились. На мой взгляд слегка завышена цена по
+                                        сравнению с конкурентами, однако, как говорится – оно того
+                                        стоит. Нравится носить с собой, нравится держать в руке. Ну и
+                                        конечно же, кушать. Идеально утоляют голод, хоть и не
+                                        надолго. Через час уже ем ещё один. Но это скорее плюс, чем
+                                        минус.
+                                    </p>
+                                </div>
+                                <div class="reviews__author">Мария Орлова</div>
+                            </article>
+                        </div>
+                    </li>
+
+                </ul>
+                <ul class="reviws__switcher">
+                    <li class="rewiws__switcher-item interectiv-avatar interectiv-avatar--activ">
+                        <a href="#" class="interectiv-avatar__link" data-open='one'>
+                            <img src="./img/advantages/billy_m.png" alt="Билли Айлиш" class="interectiv-avatar__img">
                         </a>
                     </li>
-                    <li class="social__icon">
-                        <a href="#" class="social__link">
-                            <div class="social__img">
-                                <svg class="fb">
-                                    <use xlink:href="./img/sprite.svg#fb"></use>
-                                </svg>
-                            </div>
+                    <li class="rewiws__switcher-item interectiv-avatar">
+                        <a href="#" class="interectiv-avatar__link" data-open='two'>
+                            <img src="./img/advantages/vadim_m.png" alt="Вадим Грачев" class="interectiv-avatar__img">
                         </a>
                     </li>
-                    <li class="social__icon">
-                        <a href="#" class="social__link">
-                            <div class="social__img">
-                                <svg class="inst">
-                                    <use xlink:href="./img/sprite.svg#inst"></use>
-                                </svg>
-                            </div>
-                        </a>
-                    </li>
-                    <li class="social__icon">
-                        <a href="#" class="social__link">
-                            <svg class="tg">
-                                <use xlink:href="./img/sprite.svg#tg"></use>
-                            </svg>
+                    <li class="rewiws__switcher-item interectiv-avatar">
+                        <a href="#" class="interectiv-avatar__link" data-open='three'>
+                            <img src="./img/advantages/maria_m.png" alt="Мария Орлова" class="interectiv-avatar__img">
                         </a>
                     </li>
                 </ul>
-            </footer>
+            </div>
+    </section>
+    <section class="section delivery_section">
+        <div class="container">
+            <h2 class="section__title">закажите доставку</h2>
+            <form class="form">
+                <div class="form__col">
+                    <div class="form__row">
+                        <label class="form__block">
+                            <div class="form__title">Имя</div>
+                            <input type="text" class="form__input">
+                        </label>
+                        <label class="form__block">
+                            <div class="form__title">Телефон</div>
+                            <input type="text" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__block">
+                            <div class="form__title">Улица</div>
+                            <input type="text" class="form__input">
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <label class="form__block">
+                            <div class="form__title">Дом</div>
+                            <input type="text" class="form__input">
+                        </label>
+                        <label class="form__block">
+                            <div class="form__title">Корпус</div>
+                            <input type="text" class="form__input">
+                        </label>
+                        <label class="form__block">
+                            <div class="form__title">Квартира</div>
+                            <input type="text" class="form__input">
+                        </label>
+                        <label class="form__block">
+                            <div class="form__title">Этаж</div>
+                            <input type="text" class="form__input">
+                        </label>
+                    </div>
+                </div>
+                <div class="form__col">
+                    <div class="form__row">
+                        <label class="form__block">
+                            <div class="form__title">Комментарий</div>
+                            <textarea name="" id="" cols="30" rows="10"
+                                class="form__input form__input--textarea"></textarea>
+                        </label>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__controls">
+                            <label class="radio">
+                                <input type="radio" name="option" class="radio__item">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Потребуется сдача</div>
+                            </label>
+                            <label class="radio">
+                                <input type="radio" name="option" class="radio__item">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Оплата картой</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__controls">
+                            <label class="radio  radio--checkbox">
+                                <input type="checkbox" class="radio__item">
+                                <div class="radio__visible"></div>
+                                <div class="radio__title">Не перезванивать</div>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form__row">
+                        <div class="form__btns">
+                            <button type="submit" class="botton botton--theme--red">Заказать</button>
+                            <button type="reset" class="botton  botton--theme--transparent">Очистить</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
         </div>
+    </section>
+    <section class="section">
+        <div class="map">
+            <img src="./img/map.png" alt="" class="map__img">
+        </div>
+    </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-address">
+            <div class="footer-address__text">Москва, ул.Новый Арбат, д.31/12</div>
+            <address class="contacts contacts--footer">
+                <svg class="contacts__img">
+                    <use xlink:href="./img/sprite.svg#phone"></use>
+                </svg>
+                <a href="tel:+78009039090" class="contacts__phone">8 800 903 90 90</a>
+            </address>
+        </div>
+        <ul class="social">
+            <li class="social__icon">
+                <a href="#" class="social__link">
+                    <div class="social__img">
+                        <svg class="vk">
+                            <use xlink:href="./img/sprite.svg#vk"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li class="social__icon">
+                <a href="#" class="social__link">
+                    <div class="social__img">
+                        <svg class="fb">
+                            <use xlink:href="./img/sprite.svg#fb"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li class="social__icon">
+                <a href="#" class="social__link">
+                    <div class="social__img">
+                        <svg class="inst">
+                            <use xlink:href="./img/sprite.svg#inst"></use>
+                        </svg>
+                    </div>
+                </a>
+            </li>
+            <li class="social__icon">
+                <a href="#" class="social__link">
+                    <svg class="tg">
+                        <use xlink:href="./img/sprite.svg#tg"></use>
+                    </svg>
+                </a>
+            </li>
+        </ul>
+    </footer>
+    </div>
     </div>
     <nav class="fixed-menu">
         <ul class="fixed_menu__list">
@@ -601,9 +719,11 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
     <script src="./js/hamburger.js"></script>
     <script src="./js/accardion.js"></script>
     <script src="./js/slider.js"></script>
+    <script src="./js/reviews_slide.js"></script>
 
 </body>
 

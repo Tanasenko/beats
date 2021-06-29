@@ -2,12 +2,20 @@
   padding: 68px 0 63px;
 }
 
+.reviews__list {
+  position: relative;
+}
+
 .reviews__display {
   background: #f8faf9;
   padding: 2.625rem 8.563rem 2.625rem 2.625rem;
   margin-bottom: 0.938rem;
   overflow: hidden;
   position: relative;
+  display: none;
+}
+.reviews__display--active {
+  display: block;
 }
 .reviews__display::before {
   content: "";
