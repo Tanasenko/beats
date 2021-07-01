@@ -37,13 +37,17 @@
   &--textarea {
     height: 9.5rem;
     resize: none;
-    margin-bottom: 1.688rem;
   }
 
   &:focus {
     border: 0.188rem solid #e01f3d;
     outline: none;
   }
+}
+
+.form__error {
+  margin-bottom: 1.688rem;
+  color: #e01f3d;
 }
 
 .form__controls {

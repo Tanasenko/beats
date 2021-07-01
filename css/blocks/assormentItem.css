@@ -10,7 +10,6 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  width: 1880px;
   will-change: right;
   -webkit-transition: right 0.3s;
   transition: right 0.3s;
@@ -123,7 +122,9 @@
 
 @media (max-width: 768px) {
   .slider {
-    width: 614px;
+    width: 90%;
+    margin: 0 auto;
+    overflow: hidden;
   }
 
   .assortment__item {
@@ -138,7 +139,9 @@
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
-    width: 614px;
+    width: 100%;
+    -ms-flex-negative: 0;
+        flex-shrink: 0;
   }
 
   .assortment__img {
@@ -203,5 +206,9 @@
 
   .assortment__text {
     margin-bottom: 25px;
+  }
+
+  .assortment__price {
+    margin-right: 1.5rem;
   }
 }
