@@ -21,6 +21,13 @@
   text-align: center;
   color: #292929;
 }
+.section__title--colors {
+  color: #fff;
+  color: #fff;
+  position: absolute;
+  top: 115px;
+  left: 84px;
+}
 
 @media (max-width: 768px) {
   .section {

@@ -13,6 +13,14 @@
   margin-bottom: 3.75rem;
   text-align: center;
   color: #292929;
+
+  &--colors {
+    color: #fff;
+    color: #fff;
+    position: absolute;
+    top: 115px;
+    left: 84px;
+  }
 }
 
 @media (max-width: 768px) {
