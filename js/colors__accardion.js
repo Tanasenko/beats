@@ -1,8 +1,33 @@
 $(document).ready(() => {
 
-    const mesureWidth = () => {
-        return 524;
+    const mesureWidth = item => {
+        let reqItemWidth = 0;
 
+        const screenWidth = $(window).width();
+        const container = item.closest('.colors__list');
+        const titleBlocks = container.find('.color__title');
+        const titleWidth = titleBlocks.width() * titleBlocks.length;
+
+        const textContainer = item.find('.color__text');
+        const paddingLeft = parseInt(textContainer.css('padding-left'));
+        const paddingRight = parseInt(textContainer.css('padding-right'));
+
+        console.log(paddingLeft);
+        console.log(paddingRight);
+
+        const isMobile = window.matchMedia('(max-width: 768px)').matches;
+
+        if (isMobile){
+            reqItemWidth = screenWidth - titleWidth;
+        } else {
+            reqItemWidth =  500;
+        }
+
+        return {
+            container: reqItemWidth,
+            textContainer: reqItemWidth - paddingLeft - paddingRight
+            
+        }        
     };
 
     const closeEveryItemInContainer = (container) => {
@@ -16,10 +41,12 @@ $(document).ready(() => {
 
     const openItem = (item) => {
         const hiddenContent = item.find('.color__content')
-        const reqWidth =  mesureWidth();
+        const reqWidth =  mesureWidth(item);
+        const textBlock = item.find('.color__text');
 
         item.addClass('active');
-        hiddenContent.width(reqWidth);
+        hiddenContent.width(reqWidth.container);
+        textBlock.width(reqWidth.textContainer);
     };
 
     $('.color__title').on('click', e =>{
