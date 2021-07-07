@@ -16,19 +16,12 @@
 
 .color__item {
   display: flex;
+  cursor: pointer;
 }
 
 .color__title {
-  font-family: "Alegreya Sans";
-  font-size: 36px;
-  font-weight: 700;
-  color: #fff;
-  transform: rotate(270deg);
-  width: 936px;
-  height: 102px;
-  margin: auto -417px;
-  padding: 29px 0 30px 34px;
-  cursor: pointer;
+  width: 102px;
+  position: relative;
 
   &.gray {
     background-color: #999999;
@@ -41,6 +34,20 @@
   &.red {
     background-color: #e01f3c;
   }
+}
+
+.color__title-text {
+  font-family: "Alegreya Sans";
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  transform: rotate(270deg);
+  position: absolute;
+  left: 50%;
+  bottom: 34px;
+  transform: rotate(270deg) translateY(-50%);
+  transform-origin: 0 0;
+  white-space: nowrap;
 }
 
 .color__content {
@@ -56,5 +63,12 @@
   font-family: "Alegreya Sans";
   color: #fff;
   position: absolute;
-  margin: 38px 53px 0 38px;
+  //margin: 38px 53px 0 38px;
+  padding: 39px 35px 0 38px;
+}
+
+@media (max-width: 480px) {
+  .color__title {
+    width: 90px;
+  }
 }
