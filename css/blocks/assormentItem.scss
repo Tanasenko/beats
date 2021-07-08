@@ -10,10 +10,11 @@
 }
 
 .assortment__item {
-  display: flex; 
+  display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 940px;
+  min-width: 100%;
+  max-width: 100%;
 }
 
 .assortment__img {
@@ -101,6 +102,10 @@
     overflow: hidden;
   }
 
+  .assortment__list {
+    width: 100%;
+  }
+
   .assortment__item {
     display: flex;
     flex-direction: column;
@@ -155,12 +160,17 @@
 }
 
 @media (max-width: 480px) {
+  .slider {
+    width: 100%;
+  }
+
   .assortment__img {
     margin-bottom: 1.625rem;
+    padding: 0 5%;
   }
 
   .assortment__info {
-    width: 26rem;
+    width: 100%;
   }
 
   .assortment__title {
