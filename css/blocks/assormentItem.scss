@@ -1,9 +1,5 @@
 .slider {
-  .bx-wrapper {
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
+  overflow: hidden;
 }
 
 .assortment__list {
@@ -14,7 +10,7 @@
 }
 
 .assortment__item {
-  display: flex;
+  display: flex; 
   justify-content: space-between;
   align-items: center;
   width: 940px;
